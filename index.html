@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home: Static Website on Azure Storage Account</title>
-     
+    <title>Home: Egyszerű weboldal</title>
+     <!-- Fontawesome 6 -->
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/fontawesome.min.css"
+        type="text/css" rel="stylesheet">
 
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/regular.min.css"
+        type="text/css" rel="stylesheet">
 
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/brands.min.css"
+        type="text/css" rel="stylesheet">
 
-  
-  <link href="https://github.com/cloudsteak/azurestaticwebsite/blob/main/assets/fontawesome6/css/fontawesome.css" rel="stylesheet">
-  <link href="https://github.com/cloudsteak/azurestaticwebsite/blob/main/assets/fontawesome6/css/brands.css" rel="stylesheet">
-  <link href="https://github.com/cloudsteak/azurestaticwebsite/blob/main/assets/fontawesome6/css/solid.css" rel="stylesheet">
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/solid.min.css"
+        type="text/css" rel="stylesheet">
 
+    <!-- Style -->
     <style>
+        body {
+            background-image: url('https://github.com/cloudsteak/azurestaticwebsite/blob/main/assets/images/laptop-gf2f68ed68_1920.jpg?raw=true');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         #bodyDiv {
-            background: #466368;
-            background: -webkit-linear-gradient(#648880, #4a5029);
-            background: -moz-linear-gradient(#648880, #4a5029);
-            background: linear-gradient(#648880, #4a5029);
+            background: rgba(0, 0, 0, 0.4);
             height: 100vh;
             width: 100vw;
             top: 0px;
@@ -29,22 +41,123 @@
             margin: 0px;
         }
 
+        #socialDiv {
+            text-align: center;
+            opacity: 75%;
+        }
+
         h1 {
             color: whitesmoke;
-            padding-top: 1%;
+            position: relative;
             text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 5rem;
+            animation-name: titleanimation;
+            animation-duration: 3.8s;
+            animation-delay: -2s;
+        }
+
+        i {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        a {
+            padding-left: 2%;
+            padding-right: 2%;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+        .iconAnimation {
+            animation-name: iconanimation;
+            animation-duration: 4s;
+            animation-delay: -2s;
+            position: relative;
+        }
+
+        @keyframes titleanimation {
+            0% {
+                top: -300px;
+                opacity: 0%;
+            }
+
+            50% {
+                top: -150px;
+                opacity: 0%;
+            }
+
+            100% {
+                top: 0px;
+                opacity: 100%;
+            }
+        }
+
+        @keyframes iconanimation {
+            0% {
+                top: 500px;
+                opacity: 0%;
+            }
+
+            50% {
+                top: 150px;
+                opacity: 30%;
+            }
+
+            100% {
+                top: 0px;
+                opacity: 100%;
+            }
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.4);
+            color: whitesmoke;
+            padding: 5px;
+            width: 100px;
+        }
+
+        button:hover {
+            background: rgba(36, 164, 167, 0.9);
+            color: whitesmoke;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .pageBottom {
+            bottom: 20px;
+            left: 49%;
+            position: absolute;
         }
     </style>
 </head>
 
 <body>
     <div id="bodyDiv">
-        <h1>Static Website on Azure Storage Account</h1>
-        <img src="https://github.com/cloudsteak/azurestaticwebsite/blob/main/assets/images/laptop-gf2f68ed68_1920.jpg" />
-        <i class="fa-solid fa-user"></i>
-        <!-- uses solid style -->
-        <i class="fa-brands fa-github-square"></i>
-        <!-- uses brand style -->
+        <h1>Nyiss egy új világ felé</h1>
+        <div id="socialDiv" class="fa-3x">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/cloudsteak" class="iconAnimation" style="animation-duration: 4.2s;"
+                title="Látogasd meg a Facebook oldalunk" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/cloudsteak_" class="iconAnimation" style="animation-duration: 4.5s;"
+                title="Látogasd meg a Instagram oldalunk" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com" class="iconAnimation" style="animation-duration: 4s;"
+                title="Látogasd meg a TikTok oldalunk" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+
+
+        </div>
+        <div class="pageBottom">
+            <button type="button"><a href="/error.html"><i class="fa-solid fa-circle-exclamation"></i>
+                    Hibaoldal</a></button>
+        </div>
     </div>
 </body>
 

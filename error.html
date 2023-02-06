@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error: Static Website on Azure Storage Account</title>
+    <title>Error: Egyszerű weboldal</title>
+     <!-- Fontawesome 6 -->
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/fontawesome.min.css"
+        type="text/css" rel="stylesheet">
+
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/regular.min.css"
+        type="text/css" rel="stylesheet">
+
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/brands.min.css"
+        type="text/css" rel="stylesheet">
+
+    <link
+        href="https://cdn.rawgit.com/cloudsteak/azurestaticwebsite/f942d5431d57c525956392c655880fd48ff0592e/assets/fontawesome6/css/solid.min.css"
+        type="text/css" rel="stylesheet">
+
+    <!-- Style -->
+    <style>
+        body {
+            background-image: url('https://github.com/cloudsteak/azurestaticwebsite/blob/main/assets/images/laptop-gf2f68ed68_1920.jpg?raw=true');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #bodyDiv {
+            background: rgba(0, 0, 0, 0.4);
+            height: 100vh;
+            width: 100vw;
+            top: 0px;
+            left: 0px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+
+        h1 {
+            color: whitesmoke;
+            position: relative;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+        }
+
+        i {
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        a {
+            padding-left: 2%;
+            padding-right: 2%;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+
+
+        button {
+            border: none;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.4);
+            color: whitesmoke;
+            padding: 5px;
+            width: 100px;
+        }
+
+        button:hover {
+            background: rgba(36, 164, 167, 0.9);
+            color: whitesmoke;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div id="bodyDiv">
+        <div class="center">
+            <i class="fa-solid fa-circle-exclamation fa-5x"></i>
+        </div>
+        <h1>Upsz! Valami hiba történt</h1>
+
+        <div class="center">
+            <button type="button"><a href="/"><i class="fa-solid fa-house"></i> Kezdőlap</a></button>
+        </div>
+    </div>
 </body>
+
 </html>
